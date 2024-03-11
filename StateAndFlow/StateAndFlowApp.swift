@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct StateAndFlowApp: App {
+    @StateObject private var contentViewVM = ContentViewViewModel()
+    @StateObject private var loginViewVM = LoginViewViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
+        .environmentObject(contentViewVM)
+        .environmentObject(loginViewVM)
     }
+    
 }

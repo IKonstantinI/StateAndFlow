@@ -11,6 +11,10 @@
 		4E134E842B9EAFFC00EB429A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E832B9EAFFC00EB429A /* ContentView.swift */; };
 		4E134E862B9EAFFF00EB429A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E134E852B9EAFFF00EB429A /* Assets.xcassets */; };
 		4E134E892B9EAFFF00EB429A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E134E882B9EAFFF00EB429A /* Preview Assets.xcassets */; };
+		4E134E902B9EB67C00EB429A /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E8F2B9EB67C00EB429A /* ContentViewViewModel.swift */; };
+		4E134E942B9ECD3C00EB429A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E932B9ECD3C00EB429A /* LoginView.swift */; };
+		4E134E962B9ECD5000EB429A /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E952B9ECD5000EB429A /* LoginViewViewModel.swift */; };
+		4E134E992B9ED06B00EB429A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E982B9ED06B00EB429A /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		4E134E832B9EAFFC00EB429A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E134E852B9EAFFF00EB429A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E134E882B9EAFFF00EB429A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E134E8F2B9EB67C00EB429A /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		4E134E932B9ECD3C00EB429A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4E134E952B9ECD5000EB429A /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		4E134E982B9ED06B00EB429A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		4E134E802B9EAFFC00EB429A /* StateAndFlow */ = {
 			isa = PBXGroup;
 			children = (
+				4E134E972B9ED05600EB429A /* Views */,
+				4E134E922B9ECD2200EB429A /* LoginView */,
 				4E134E812B9EAFFC00EB429A /* StateAndFlowApp.swift */,
-				4E134E832B9EAFFC00EB429A /* ContentView.swift */,
+				4E134E912B9EB68900EB429A /* ContentView */,
 				4E134E852B9EAFFF00EB429A /* Assets.xcassets */,
 				4E134E872B9EAFFF00EB429A /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				4E134E882B9EAFFF00EB429A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E134E912B9EB68900EB429A /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4E134E8F2B9EB67C00EB429A /* ContentViewViewModel.swift */,
+				4E134E832B9EAFFC00EB429A /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		4E134E922B9ECD2200EB429A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				4E134E932B9ECD3C00EB429A /* LoginView.swift */,
+				4E134E952B9ECD5000EB429A /* LoginViewViewModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		4E134E972B9ED05600EB429A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E134E982B9ED06B00EB429A /* RootView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E134E962B9ECD5000EB429A /* LoginViewViewModel.swift in Sources */,
 				4E134E842B9EAFFC00EB429A /* ContentView.swift in Sources */,
+				4E134E992B9ED06B00EB429A /* RootView.swift in Sources */,
 				4E134E822B9EAFFC00EB429A /* StateAndFlowApp.swift in Sources */,
+				4E134E942B9ECD3C00EB429A /* LoginView.swift in Sources */,
+				4E134E902B9EB67C00EB429A /* ContentViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
