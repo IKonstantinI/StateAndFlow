@@ -15,6 +15,10 @@
 		4E134E942B9ECD3C00EB429A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E932B9ECD3C00EB429A /* LoginView.swift */; };
 		4E134E962B9ECD5000EB429A /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E952B9ECD5000EB429A /* LoginViewViewModel.swift */; };
 		4E134E992B9ED06B00EB429A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E134E982B9ED06B00EB429A /* RootView.swift */; };
+		4E7B394E2BA027C600323A32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B394D2BA027C600323A32 /* User.swift */; };
+		4E7B39512BA02E7600323A32 /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B39502BA02E7600323A32 /* ButtonAppearanceModifier.swift */; };
+		4E7B39532BA02FF200323A32 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B39522BA02FF200323A32 /* ButtonView.swift */; };
+		4E7B39562BA0349900323A32 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B39552BA0349900323A32 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		4E134E932B9ECD3C00EB429A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4E134E952B9ECD5000EB429A /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		4E134E982B9ED06B00EB429A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4E7B394D2BA027C600323A32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E7B39502BA02E7600323A32 /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
+		4E7B39522BA02FF200323A32 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		4E7B39552BA0349900323A32 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +67,12 @@
 		4E134E802B9EAFFC00EB429A /* StateAndFlow */ = {
 			isa = PBXGroup;
 			children = (
+				4E134E812B9EAFFC00EB429A /* StateAndFlowApp.swift */,
+				4E7B39542BA0346F00323A32 /* Services */,
+				4E7B394F2BA02E4C00323A32 /* Modifers */,
+				4E7B394C2BA027A700323A32 /* Models */,
 				4E134E972B9ED05600EB429A /* Views */,
 				4E134E922B9ECD2200EB429A /* LoginView */,
-				4E134E812B9EAFFC00EB429A /* StateAndFlowApp.swift */,
 				4E134E912B9EB68900EB429A /* ContentView */,
 				4E134E852B9EAFFF00EB429A /* Assets.xcassets */,
 				4E134E872B9EAFFF00EB429A /* Preview Content */,
@@ -99,8 +110,33 @@
 			isa = PBXGroup;
 			children = (
 				4E134E982B9ED06B00EB429A /* RootView.swift */,
+				4E7B39522BA02FF200323A32 /* ButtonView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4E7B394C2BA027A700323A32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E7B394D2BA027C600323A32 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E7B394F2BA02E4C00323A32 /* Modifers */ = {
+			isa = PBXGroup;
+			children = (
+				4E7B39502BA02E7600323A32 /* ButtonAppearanceModifier.swift */,
+			);
+			path = Modifers;
+			sourceTree = "<group>";
+		};
+		4E7B39542BA0346F00323A32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E7B39552BA0349900323A32 /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +211,14 @@
 			files = (
 				4E134E962B9ECD5000EB429A /* LoginViewViewModel.swift in Sources */,
 				4E134E842B9EAFFC00EB429A /* ContentView.swift in Sources */,
+				4E7B39512BA02E7600323A32 /* ButtonAppearanceModifier.swift in Sources */,
 				4E134E992B9ED06B00EB429A /* RootView.swift in Sources */,
 				4E134E822B9EAFFC00EB429A /* StateAndFlowApp.swift in Sources */,
 				4E134E942B9ECD3C00EB429A /* LoginView.swift in Sources */,
 				4E134E902B9EB67C00EB429A /* ContentViewViewModel.swift in Sources */,
+				4E7B39562BA0349900323A32 /* StorageManager.swift in Sources */,
+				4E7B394E2BA027C600323A32 /* User.swift in Sources */,
+				4E7B39532BA02FF200323A32 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,46 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var contentViewVM: ContentViewViewModel
+    
     @EnvironmentObject private var loginViewVM: LoginViewViewModel
+    
+    private let contentViewVM = ContentViewViewModel()
     
     var body: some View {
         VStack {
-            Text("Hi, \(loginViewVM.name)!")
+            Text("Hi, \(loginViewVM.user.name)!")
                 .padding(.top, 100)
                 .font(.largeTitle)
             Text(contentViewVM.counter.formatted())
                 .font(.largeTitle)
                 .padding(.top, 100)
+            
             Spacer()
-            ButtonView(contentViewVM: contentViewVM)
-            Spacer()
+            
+            VStack {
+                ButtonView(
+                    title: contentViewVM.buttonTitle,
+                    color: .red,
+                    action: contentViewVM.startTimer
+                )
+                
+                Spacer()
+                
+                ButtonView(
+                    title: "LogOut",
+                    color: .blue,
+                    action: loginViewVM.logOut
+                )
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-        .environmentObject(ContentViewViewModel())
-        .environmentObject(LoginViewViewModel())
-}
-
-struct ButtonView: View {
-    @ObservedObject var contentViewVM: ContentViewViewModel
-    var body: some View {
-        Button(action: contentViewVM.startTimer) {
-            Text(contentViewVM.buttonTitle)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundStyle(.white)
-        }
-        .frame(width: 200, height: 60)
-        .background(.red)
-        .clipShape(.rect(cornerRadius: 20))
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.black, lineWidth: 5)
-        )
+struct TimerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(LoginViewViewModel())
     }
 }
